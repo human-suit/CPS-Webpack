@@ -1,0 +1,44 @@
+$TXcolor: #7e7e82;
+$LinEcolor: #d9fff5;
+
+.footer {
+  text-align: center;
+  border-top: 1px solid $LinEcolor;
+  padding: 20px 0px;
+  display: flex;
+  color: $TXcolor;
+  justify-content: space-between;
+
+  span {
+    padding: 0px;
+  }
+}
+@media (width < 669px) {
+  .footer {
+    display: grid;
+    text-align: center;
+    span {
+      padding: 0;
+    }
+  }
+}
+@media (width > 670px) {
+  .footer {
+    h5:first-child {
+      width: 220px;
+      text-align: left;
+    }
+    h5:last-child {
+      width: 220px;
+      margin-right: 10px;
+      text-align: right;
+    }
+  }
+}
+@media (width > 1240px) {
+  .footer {
+    h5:last-child {
+      width: 320px;
+    }
+  }
+}

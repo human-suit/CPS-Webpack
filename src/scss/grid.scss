@@ -1,0 +1,73 @@
+$BGbutton: #ff3e79;
+
+.grid {
+  padding-left: 20px;
+  .headTable {
+    padding: 10px;
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
+    button {
+      width: 220px;
+    }
+  }
+  .colum {
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    .butt {
+      margin-top: 0px !important;
+      background-color: $BGbutton !important;
+      width: 200px;
+      margin-right: 60px;
+      border-radius: 40px;
+      color: #ffffff;
+      .TextButton {
+        min-width: 140px;
+        color: #fff !important;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 800;
+      }
+    }
+  }
+  p:first-child {
+    min-width: 520px;
+  }
+  p:nth-child(2) {
+    min-width: 280px;
+  }
+  p:nth-child(3) {
+    min-width: 180px;
+  }
+  padding-bottom: 20px;
+}
+
+@media (width < 768px) {
+  .grid {
+    .headTable {
+      button {
+      }
+    }
+    .colum {
+      .butt {
+        .TextButton {
+        }
+      }
+    }
+    p:first-child {
+      min-width: 220px;
+    }
+    p:nth-child(2) {
+      min-width: 280px;
+    }
+    p:nth-child(3) {
+      min-width: 180px;
+    }
+  }
+}
+@media (width < 1280px) {
+}

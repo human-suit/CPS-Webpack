@@ -1,0 +1,112 @@
+$span: #ff3e79;
+
+.popup__beakCall {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  z-index: 12;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  box-shadow: -5px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  .exit__popup {
+    position: absolute;
+    margin-left: -100px;
+    z-index: 12;
+    background-color: #ff3e79;
+    height: 50px;
+    border-radius: 100px;
+    width: 50px;
+    img {
+      padding: 16px;
+    }
+    :hover {
+      cursor: pointer;
+    }
+  }
+  .ariya {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -100vw;
+    margin-top: -20px;
+    background-color: white;
+    opacity: 0.8;
+  }
+  .ariya:hover {
+    cursor: pointer;
+  }
+  .popup__body {
+    display: grid;
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    input {
+      padding: 10px 100px 10px 10px;
+      border-radius: 5px;
+      border: 1px solid #eaeaea;
+      margin-bottom: 15px;
+    }
+    textarea {
+      border-radius: 5px;
+      border: 1px solid #eaeaea;
+      padding-bottom: 80px;
+    }
+    p {
+      float: left;
+      span {
+        color: $span;
+      }
+    }
+    button {
+      margin-left: 40%;
+      width: 200px;
+      right: 0;
+      display: flex;
+      background-color: #ff3e79;
+      border-radius: 80px;
+      padding: 8px 40px;
+      border: 0px;
+      height: 40px;
+      gap: 10px;
+      p {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 4px 0px 0px 0px;
+        color: white;
+        text-transform: uppercase;
+      }
+      img {
+        margin-top: 7px;
+        height: 14px;
+      }
+    }
+  }
+}
+.Push {
+  display: block;
+}
+
+@media (width < 669px) {
+  .popup__beakCall {
+    width: fit-content;
+    .exit__popup {
+      position: relative;
+      margin-left: 0px;
+      z-index: 12;
+      background-color: #ff3e79;
+      height: 50px;
+      border-radius: 100px;
+      width: 50px;
+      img {
+        padding: 16px;
+      }
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,377 @@
+@use 'font';
+@use 'menu';
+@use 'wrapper';
+@use 'types';
+@use 'wrapperTwo';
+@use 'grid';
+@use 'footer';
+@use 'sould';
+@use 'popupBeakCall';
+@use 'popupSellCall';
+
+// @import '~normalize.css';
+
+$bgColor: #24292e;
+$text: #fff;
+$BGcolor: #f8f8f8;
+
+.flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #7e7e82;
+}
+button {
+  cursor: pointer;
+}
+.padding {
+  padding-left: 30px;
+}
+.flex:first-child {
+  gap: 20px;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  min-width: 428px;
+  max-width: 1920px;
+  padding: 0px;
+  font-family: 'TT Lakes';
+  background-color: #f8f8f8;
+  justify-content: space-between;
+  #wrapper {
+    z-index: 1;
+    min-width: 320px;
+    // max-width: 748px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 50px;
+    .header {
+      height: 88px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .flex {
+        .header__menuBurger {
+          .header__menuBurger-line {
+            margin-top: 0.2rem;
+            width: 18px;
+            height: 2px;
+            margin: 8px 15px;
+            background-color: #fff;
+          }
+          .header__menuBurger-line:first-child {
+            margin-top: 12px;
+          }
+          .header__menuBurger-line:nth-child(2) {
+            width: 14px;
+          }
+          .header__menuBurger:hover {
+            cursor: pointer;
+          }
+        }
+        .logo:hover {
+          cursor: pointer;
+        }
+      }
+      .flex:nth-child(2) {
+        .header__dopMenu-list {
+          display: none;
+          .header__menu-list {
+            .header__menu-item {
+              display: flex;
+              p {
+                font-weight: 500;
+                margin-right: 10px;
+              }
+              a {
+                img {
+                  margin: 14px;
+                }
+              }
+            }
+          }
+        }
+        .flex {
+          .header__palka {
+            width: 3px;
+            height: 46px;
+            background-color: #eaeaea;
+            margin-top: 18px;
+            margin-left: 18px;
+          }
+          .header__menu {
+            .header__menu-list {
+              display: flex;
+              width: 120px;
+              justify-content: space-between;
+              padding-left: 20px;
+              .header__menu-item {
+                display: flex;
+                p {
+                  font-weight: 500;
+                  margin-right: 10px;
+                }
+                a {
+                  img {
+                    margin: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  background-color: #ff3e79;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.pointer:hover {
+  transition: 0.5s;
+  margin-top: -10px;
+}
+
+.visible {
+  display: none;
+  margin-left: 28px;
+}
+
+/* next section */
+body {
+  #wrapper {
+    .servise {
+      background-color: $BGcolor;
+      padding-bottom: 20px;
+      .flex {
+        .servise__infoBlock__zaglov {
+          margin-top: 8px;
+          h1 {
+            font-size: 21px;
+            padding-left: 18px;
+            border-left: 3px solid #41f6d7;
+            border-radius: 0px 25px 25px 0px;
+          }
+        }
+        .servise__menu-buttons {
+          display: none;
+          padding: 10px 15px 0px 0px;
+          .header__menu-item {
+            display: flex;
+            margin-right: 30px;
+            p {
+              font-size: 18px;
+              font-weight: 500;
+              margin-right: 10px;
+              margin-top: 12px;
+            }
+            a {
+              img {
+                margin: 15px;
+              }
+            }
+          }
+        }
+      }
+      .servise__infoBlock__navigate {
+        padding: 10px;
+        .servise__list {
+          padding-left: 0px;
+          overflow-x: scroll;
+          li > a {
+            display: block;
+            padding: 14px;
+            margin-right: 10px;
+            border-radius: 10px;
+            border: 3px solid transparent;
+          }
+          li:hover > a {
+            transition: 0.3s;
+            background-color: white;
+            border: 3px solid #b8ffec;
+          }
+        }
+      }
+      .servise__infoBlock__text {
+        display: grid;
+        /* gap: 10px; */
+        grid-column: span 1;
+        .servise__left {
+          padding: 10px;
+          min-width: 280px;
+          p {
+            color: #1b1c21;
+            font-size: 14px;
+            font-weight: 300;
+          }
+          .vibe::before {
+            content: '';
+          }
+          button {
+            font-size: 18px;
+            font-weight: 500;
+            background-color: transparent;
+            border: 0px;
+            margin: 0px 0px 20px 20px;
+            height: 30px;
+            .servise__img {
+              padding-right: 10px;
+              width: 10px;
+              transition: 0.3s;
+            }
+          }
+        }
+        .servise__infoBlock__text-right {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.servise__left > button:hover > .servise__img {
+  transition: 0.3s;
+  margin-top: 10px;
+}
+@media (width < 1280px) {
+  body {
+    #wrapper {
+      padding-left: 20px;
+    }
+  }
+}
+@media (width > 768px) {
+  body {
+    #wrapper {
+      min-width: 768px;
+      max-width: 1100px;
+      overflow: hidden;
+      margin: 0 auto;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .flex {
+          .visible {
+            display: block;
+          }
+        }
+        .flex:nth-child(2) {
+          .header__dopMenu-list {
+            display: block;
+            ul {
+              gap: 10px;
+              display: flex;
+            }
+          }
+          .flex {
+            .header__menu {
+              .header__menu-list {
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+      .servise {
+        .servise__infoBlock {
+          .flex {
+            .servise__menu-buttons {
+              display: none;
+            }
+          }
+          .servise__infoBlock__navigate {
+            .servise__list {
+              display: ruby;
+            }
+          }
+          .servise__infoBlock__text {
+            margin-top: 20px;
+            display: grid;
+            gap: 60px;
+            grid-template-columns: repeat(2, 1fr);
+            .servise__left {
+              .vibe::before {
+                content: 'Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (width > 1280px) {
+  body {
+    #wrapper {
+      min-width: 1120px;
+      max-width: 1920px;
+      overflow: hidden;
+      margin: 0 auto;
+      .header {
+        display: none;
+      }
+      .servise {
+        .servise__infoBlock {
+          .flex {
+            justify-content: space-between;
+            .servise__menu-buttons {
+              display: block;
+              .header__menu-list {
+                display: flex;
+              }
+            }
+          }
+          .servise__infoBlock__navigate {
+            .servise__list {
+              min-width: 320px;
+              max-width: 1920px;
+              justify-content: space-between;
+              overflow-x: hidden;
+            }
+            .header__menu-list {
+              display: ruby;
+            }
+          }
+          .servise__infoBlock__text {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            .servise__left {
+              font-size: 14px;
+              .vibe::before {
+                content: 'Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width > 1466px) {
+  body {
+    #wrapper {
+      .servise {
+        .servise__infoBlock {
+          .servise__infoBlock__navigate {
+            .header__menu-list {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}

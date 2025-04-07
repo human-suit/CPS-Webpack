@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url("/front/TTLikes/TTLakes-Medium.eot");
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url("/front/TTLikes/TTLakes-Medium.eot?#iefix") format('embedded-opentype'),
+        url("/front/TTLikes/TTLakes-Medium.woff2") format('woff2'),
+        url("/front/TTLikes/TTLakes-Medium.woff") format('woff'),
+        url("/front/TTLikes/TTLakes-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes Compressed";
+    src: url("/front/TTLikes/TTLakesCompressed-Black.eot");
+    src: local("/front/TTLikes/TTLakesCompressed-Black"), local('TTLakesCompressed-Black'),
+        url("/front/TTLikes/TTLakesCompressed-Black.eot?#iefix") format('embedded-opentype'),
+        url("/front/TTLikes/TTLakesCompressed-Black.woff2") format('woff2'),
+        url("/front/TTLikes/TTLakesCompressed-Black.woff") format('woff'),
+        url("/front/TTLikes/TTLakesCompressed-Black.ttf") format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT LakesBold";
+    src: url("/front/TTLikes/TTLakesCondensed-Bold.eot");
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
+        url("/front/TTLikes/TTLakesCondensed-Bold.eot?#iefix") format('embedded-opentype'),
+        url("/front/TTLikes/TTLakesCondensed-Bold.woff2") format('woff2'),
+        url("/front/TTLikes/TTLakesCondensed-Bold.woff") format('woff'),
+        url("/front/TTLikes/TTLakesCondensed-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,186 @@
+$TXcolor: #1b1c21;
+$Activ: #b5b6bc;
+$Drop: #dddddd;
+$But: #ff3e79;
+$H5Text: #7e7e82;
+#sould {
+  padding-bottom: 30px;
+  .heading {
+    .header__text {
+      padding: 30px 10px;
+      background-image: linear-gradient(0.25turn, #f8f8f8, #ffffff);
+      text-transform: uppercase;
+      font-size: 18px;
+      word-spacing: -1px;
+      color: #7e7e82;
+      font-weight: 100;
+      min-width: 288px;
+      text-align: justify;
+    }
+  }
+  .swiper {
+    .swiper-container {
+      .headGrid {
+        display: none;
+      }
+      .swiper-wrapper {
+        padding-bottom: 80px;
+
+        .swiper-slide {
+          .swiper-card {
+            min-width: 360px;
+            height: 220px;
+            padding: 20px;
+            padding-bottom: 0px;
+            background-color: white;
+            border-radius: 10px;
+            .block:last-child {
+              display: flex;
+              justify-content: space-between;
+            }
+            h5 {
+              color: $H5Text;
+              font-size: 14px;
+              margin: 0px;
+              padding: 0px;
+            }
+            p {
+              color: #1b1c21;
+              margin-top: 4px;
+            }
+            .sellButton {
+              display: flex;
+              background-color: $But;
+              border-radius: 80px;
+              padding: 12px 20px;
+              p {
+                margin: 0px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 800;
+              }
+              img {
+                margin-top: 4px;
+                height: 12px;
+              }
+            }
+          }
+        }
+      }
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: $Drop;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: $Activ;
+      }
+    }
+  }
+  p {
+    color: $TXcolor;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  button {
+    margin-top: 10px;
+    color: $TXcolor;
+    font-size: 18px;
+    border: 0px;
+    padding: 0px;
+    font-weight: 600;
+    background-color: transparent;
+    img {
+      padding-left: 10px;
+    }
+  }
+}
+@media (width > 669px) {
+  #sould {
+    .swiper {
+      .swiper-container {
+        .headGrid {
+          color: #7e7e82;
+          min-width: 360px;
+          max-width: 1280px;
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 20px;
+          h5:first-child {
+            width: 360px;
+          }
+          h5:nth-child(2) {
+            width: 80px;
+          }
+          div {
+            width: 280px;
+          }
+          .wid {
+            visibility: hidden;
+          }
+        }
+        .swiper-wrapper {
+          display: grid;
+          gap: 0px;
+          .swiper-slide {
+            margin-top: -10px;
+            min-width: 360px !important;
+            .swiper-card {
+              .swip-flex {
+                display: flex;
+                justify-content: space-between;
+                min-width: 100px;
+                padding-bottom: 20px;
+              }
+              min-width: 360px;
+              max-width: 1420px;
+              height: 40px;
+              padding-bottom: 30px;
+              justify-content: space-between;
+              .block {
+                height: 20px;
+                h5 {
+                  display: none;
+                }
+                p {
+                  height: 10px;
+                }
+              }
+              .block:first-child {
+                width: 360px;
+              }
+              .block:nth-child(2) {
+                width: 80px;
+              }
+              .block:last-child {
+                width: 260px;
+                justify-content: space-between;
+              }
+              .block {
+                .sellButton {
+                  height: 44px;
+                  margin-top: -10px;
+                  p {
+                    margin-top: 0px;
+                  }
+                }
+              }
+              .hr {
+                min-width: 360px;
+                max-width: 1520px;
+                height: 2px;
+                margin-top: 10px;
+                background-color: #eaeaea;
+              }
+            }
+          }
+        }
+        .swiper-grid > .swiper-wrapper {
+          display: grid;
+        }
+      }
+    }
+  }
+}
