@@ -1,4 +1,9 @@
 Pages = https://human-suit.github.io/CPS-Webpack/
+![image](https://github.com/user-attachments/assets/7524bb37-05ce-4414-9455-1c98029a1c2e)
+![image](https://github.com/user-attachments/assets/c2d9410f-7d43-4b26-a54f-4c382595ad42)
+![image](https://github.com/user-attachments/assets/6e882720-9320-49fc-9e3a-3b76bb5b4d29)
+![image](https://github.com/user-attachments/assets/87c34f8c-8294-4d5e-86b7-36f756152849)
+![image](https://github.com/user-attachments/assets/6defb013-6386-457a-a7dc-7cfc6f4958dd)
 
 
 # Webpack Static Site Starter Kit
