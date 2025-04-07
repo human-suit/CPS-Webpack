@@ -1,3 +1,6 @@
+Pages = https://human-suit.github.io/CPS-Webpack/
+
+
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
